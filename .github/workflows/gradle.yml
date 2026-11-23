@@ -26,11 +26,12 @@ jobs:
           gradle-version: '8.14'
 
       - name: Zbuduj mod
+        working-directory: NovaVisuals-1.21.8-source
         run: gradle build --stacktrace
 
       - name: Zapisz JAR
         uses: actions/upload-artifact@v4
         with:
           name: NovaVisuals-1.21.8
-          path: build/libs/*.jar
+          path: NovaVisuals-1.21.8-source/build/libs/*.jar
           if-no-files-found: error
