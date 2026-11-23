@@ -1,0 +1,5 @@
+{
+ "schemaVersion":1,"id":"novavisuals","version":"${version}","name":"NovaVisuals","description":"Personalizowany HUD i narzedzia FPS","environment":"client",
+ "entrypoints":{"client":["pl.visuals.client.VisualsClient"]},
+ "depends":{"fabricloader":">=0.16.14","minecraft":"~1.21.8","java":">=21","fabric-api":"*"}
+}
